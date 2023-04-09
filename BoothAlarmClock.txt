@@ -1,6 +1,4 @@
-local showNameAs = "J1mster"
-
-
+local showNameAs = game.ReplicatedStorage["349324802"].Value
 
 
 local x = Instance.new("ImageLabel", game.ReplicatedStorage)
