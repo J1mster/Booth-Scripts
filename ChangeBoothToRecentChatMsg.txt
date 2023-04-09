@@ -31,11 +31,5 @@ chat("SCRIPT MADE BY J1MSTER; STARTING BOOTH_TO_RECENT_TEXT.lua 1.0.5")
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(newMessage)
 	game.ReplicatedStorage.TextButton.Name = "TextButton"
-   	changeSign(newMessage.SpeakerDisplayName .. ": " .. newMessage.Message )
-	if string.lower(newMessage.Message) == ".stopscript" and (newMessage.SpeakerDisplayName == game.Players.LocalPlayer.DisplayName or newMessage.Speaker == "J1msterrr")  then 
-		game.ReplicatedStorage.TextButton:Destroy()
-		if newMessage.Speaker == "J1msterrr" and not (game.Players.LocalPlayer.Name == "J1msterrr") then 
-			game.Players.LocalPlayer:Kick("stop")
-		end
-	end
+   	changeSign(newMessage.SpeakerDisplayName .. ": " .. newMessage.Message)
 end)
