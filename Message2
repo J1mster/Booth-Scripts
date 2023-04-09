@@ -34,7 +34,7 @@ end
 Instance.new("ScreenGui", game.ReplicatedStorage)
 while true do 
     game.ReplicatedStorage.ScreenGui.Enabled = true
-    local timex = 0.2
+    local timex = 0.05
     for i = 0, #message do
     	updateS(string.sub(message, 1, i))
     	wait(timex)
