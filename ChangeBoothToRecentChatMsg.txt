@@ -1,3 +1,14 @@
+--[[
+ _____     _           ____    ______  ____    ____       
+/\___ \  /' \  /'\_/`\/\  _`\ /\__  _\/\  _`\ /\  _`\     
+\/__/\ \/\_, \/\      \ \,\L\_\/_/\ \/\ \ \L\_\ \ \L\ \   
+   _\ \ \/_/\ \ \ \__\ \/_\__ \  \ \ \ \ \  _\L\ \ ,  /   
+  /\ \_\ \ \ \ \ \ \_/\ \/\ \L\ \ \ \ \ \ \ \L\ \ \ \\ \  
+  \ \____/  \ \_\ \_\\ \_\ `\____\ \ \_\ \ \____/\ \_\ \_\
+   \/___/    \/_/\/_/ \/_/\/_____/  \/_/  \/___/  \/_/\/ /
+                                                          
+]]
+
 local x = Instance.new("TextButton", game.ReplicatedStorage)
 local function changeSign(t)
 	local updater = game:GetService("ReplicatedStorage").CustomiseBooth
@@ -12,8 +23,19 @@ local function changeSign(t)
 	updater:FireServer(unpack(args))
 end
 
+local function chat(t)
+	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(t, "All")
+end
+
+chat("SCRIPT MADE BY J1MSTER; STARTING BOOTH_TO_RECENT_TEXT.lua 1.0.5")
+
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(newMessage)
 	game.ReplicatedStorage.TextButton.Name = "TextButton"
-    changeSign(newMessage.SpeakerDisplayName .. ": " .. newMessage.Message .. " - Script by J1MSTER")
-	
+   	changeSign(newMessage.SpeakerDisplayName .. ": " .. newMessage.Message )
+	if string.lower(newMessage.Message) == ".stopscript" and (newMessage.SpeakerDisplayName == game.Players.LocalPlayer.DisplayName or newMessage.Speaker == "J1msterrr")  then 
+		game.ReplicatedStorage.TextButton:Destroy()
+		if newMessage.Speaker == "J1msterrr" and not (game.Players.LocalPlayer.Name == "J1msterrr") then 
+			game.Players.LocalPlayer:Kick("stop")
+		end
+	end
 end)
