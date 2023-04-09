@@ -77,6 +77,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/J1mster/Booth-Scripts
 
   local value = Instance.new("StringValue", game.ReplicatedStorage
   value.Name = "349324802"
+  value.Value = YourName
   
   loadstring(game:HttpGet("https://raw.githubusercontent.com/J1mster/Booth-Scripts/main/BoothAlarmClock.txt"))()
   
