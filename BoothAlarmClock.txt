@@ -1,0 +1,48 @@
+local showNameAs = "J1mster"
+
+
+
+
+local x = Instance.new("ImageLabel", game.ReplicatedStorage)
+local function changeSign(t)
+	local updater = game:GetService("ReplicatedStorage").CustomiseBooth
+	local args = {
+		[1] = "Update",
+		[2] = {
+			["DescriptionText"] = t,
+			["ImageId"] = 0
+		}
+	}
+
+	updater:FireServer(unpack(args))
+end
+local i = ":"
+while wait() do 
+    local timee = os.date("*t")
+    local hr = timee.hour
+    local mn = timee.min
+    local sc = timee.sec
+    local mer = "AM"
+    if hr>12 then 
+        hr = tostring(hr-12)
+        mer = "PM"
+    else 
+        mer = "AM"
+    end
+    if mn<10 then 
+        mn = "0" .. mn
+    end
+    if sc<10 then 
+        sc = "0" .. sc
+    end  
+    
+	wait(1)
+	changeSign((showNameAs  .. "'s time: ".. hr .. i .. mn .. " (" .. sc .. ") " .. mer))
+	game.ReplicatedStorage.ImageLabel.Image = "x"
+	
+	if i == " " then 
+	    i = ":"
+	elseif i == ":" then 
+	    i = " "
+	end
+end
