@@ -63,3 +63,23 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/J1mster/Booth-Scripts
   
   
   loadstring(game:HttpGet("https://raw.githubusercontent.com/J1mster/Booth-Scripts/main/BoothBypass.txt"))()
+
+
+
+
+  5. ALARM CLOCK 
+  
+  
+  
+  local YourName = "J1mster"
+  
+
+
+  local value = Instance.new("StringValue", game.ReplicatedStorage
+  value.Name = "349324802"
+  
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/J1mster/Booth-Scripts/main/BoothAlarmClock.txt"))()
+  
+  
+
+
