@@ -34,7 +34,7 @@ while wait() do
         sc = "0" .. sc
     end  
     
-	wait(1)
+	wait(0.5)
 	changeSign((showNameAs  .. "'s time: ".. hr .. i .. mn .. " (" .. sc .. ") " .. mer))
 	game.ReplicatedStorage.ImageLabel.Image = "x"
 	
