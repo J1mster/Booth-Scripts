@@ -12,9 +12,17 @@ local message = "CHANGE ME TO WHATEVER YOU WANT"
 ]]
 
 
+if game.ReplicatedStorage:FindFirstChild("48482375020") then 
+	game.ReplicatedStorage:FindFirstChild("48482375020"):Destroy()
+end
+
 local i = Instance.new("StringValue", game.ReplicatedStorage)
 i.Value = message
 i.Name = "48482375020"
+
+if game.ReplicatedStorage:FindFirstChild("ScreenGui") then 
+	game.ReplicatedStorage:FindFirstChild("ScreenGui"):Destroy()
+end
 
 
 local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
@@ -30,7 +38,6 @@ local function updateS(t)
     
     updater:FireServer(unpack(args))
 end
-
 Instance.new("ScreenGui", game.ReplicatedStorage)
 while true do 
     game.ReplicatedStorage.ScreenGui.Enabled = true
