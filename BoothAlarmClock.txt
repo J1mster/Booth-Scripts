@@ -21,7 +21,7 @@ _G.Heartbeat:Connect(function()
 	i = ":"
 	wait(0.5)
 	i = " "
-)
+end)
 while wait() do 
 	wait()
     local timee = os.date("*t")
