@@ -16,33 +16,36 @@ local function changeSign(t)
 end
 local i = ":"
 
-
-while wait() do 
-    wait(0.5)
-    local timee = os.date("*t")
-    local hr = timee.hour
-    local mn = timee.min
-    local sc = timee.sec
-    local mer = "AM"
-    if hr>12 then 
-        hr = tostring(hr-12)
-        mer = "PM"
-    else 
-        mer = "AM"
-    end
-    if mn<10 then 
-        mn = "0" .. mn
-    end
-    if sc<10 then 
-        sc = "0" .. sc
-    end  
+local t = true
+while t == true do
+	 wait(0.5)
+	 local timee = os.date("*t")
+	 local hr = timee.hour
+	 local mn = timee.min
+	 local sc = timee.sec
+	 local mer = "AM"
+	 if hr>12 then 
+		hr = tostring(hr-12)
+		mer = "PM"
+	 else 
+	        mer = "AM"
+	 end
+	 if mn<10 then 
+		mn = "0" .. mn
+	 end
+	 if sc<10 then 
+		sc = "0" .. sc
+  	 end  
 	changeSign((showNameAs  .. "'s time: ".. hr .. i .. mn .. " (" .. sc .. ") " .. mer))
 	game.ReplicatedStorage.ImageLabel.Image = "x"
 	
-if i == ":" then 
-	i = " " 
-else 
-	i = ":" 
-end
-	
+	if i == ":" then 
+		i = " " 
+	else 
+		i = ":" 
+	end
+
+	if hr == "6" and mn == "59" and sc == "59" then 
+		t = false 
+	end
 end
