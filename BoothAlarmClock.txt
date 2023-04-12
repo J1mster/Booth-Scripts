@@ -16,14 +16,9 @@ local function changeSign(t)
 end
 local i = ":"
 
-game.RunService.Heartbeat:Connect(function()
-	wait(0.5)
-	i = ":"
-	wait(0.5)
-	i = " "
-end)
+
 while wait() do 
-	wait()
+    wait()
     local timee = os.date("*t")
     local hr = timee.hour
     local mn = timee.min
