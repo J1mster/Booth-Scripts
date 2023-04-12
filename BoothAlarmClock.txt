@@ -16,7 +16,7 @@ local function changeSign(t)
 end
 local i = ":"
 
-_G.Heartbeat:Connect(function()
+game.RunService.Heartbeat:Connect(function()
 	wait(0.5)
 	i = ":"
 	wait(0.5)
