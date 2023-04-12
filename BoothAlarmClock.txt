@@ -15,7 +15,15 @@ local function changeSign(t)
 	updater:FireServer(unpack(args))
 end
 local i = ":"
+
+_G.Heartbeat:Connect(function()
+	wait(0.5)
+	i = ":"
+	wait(0.5)
+	i = " "
+)
 while wait() do 
+	wait()
     local timee = os.date("*t")
     local hr = timee.hour
     local mn = timee.min
@@ -33,14 +41,7 @@ while wait() do
     if sc<10 then 
         sc = "0" .. sc
     end  
-    
-	wait(0.75)
 	changeSign((showNameAs  .. "'s time: ".. hr .. i .. mn .. " (" .. sc .. ") " .. mer))
 	game.ReplicatedStorage.ImageLabel.Image = "x"
 	
-	if i == " " then 
-	    i = ":"
-	elseif i == ":" then 
-	    i = " "
-	end
 end
