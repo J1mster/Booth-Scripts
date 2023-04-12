@@ -18,7 +18,7 @@ local i = ":"
 
 
 while wait() do 
-    wait()
+    wait(0.5)
     local timee = os.date("*t")
     local hr = timee.hour
     local mn = timee.min
@@ -38,5 +38,11 @@ while wait() do
     end  
 	changeSign((showNameAs  .. "'s time: ".. hr .. i .. mn .. " (" .. sc .. ") " .. mer))
 	game.ReplicatedStorage.ImageLabel.Image = "x"
+	
+if i == ":" then 
+	i = " " 
+else 
+	i = ":" 
+end
 	
 end
