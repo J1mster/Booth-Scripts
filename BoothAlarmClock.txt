@@ -44,8 +44,4 @@ while t == true do
 	else 
 		i = ":" 
 	end
-
-	if hr == "6" and mn == "59" and sc == "59" then 
-		t = false 
-	end
 end
