@@ -40,6 +40,7 @@ local function updateS(t)
 end
 Instance.new("ScreenGui", game.ReplicatedStorage)
 while true do 
+local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
     game.ReplicatedStorage.ScreenGui.Enabled = true
     local timex = 0.001
     for i = 0, #message do
