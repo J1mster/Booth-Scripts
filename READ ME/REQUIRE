@@ -43,7 +43,7 @@ i.Name = "48482375020"
 local x = Instance.new("NumberValue", game.ReplicatedStorage)
 x.Name = "48482375020T"
 x.Value = time
-local v = instance.new("NumberValue", game.ReplicatedStorage)
+local v = Instance.new("NumberValue", game.ReplicatedStorage)
 v.Name = "48482375020T2"
 v.Value = time2
 
