@@ -40,7 +40,7 @@ local i = Instance.new("StringValue", game.ReplicatedStorage)
 i.Value = message
 i.Name = "48482375020"
 
-local x = instance.new("NumberValue", game.ReplicatedStorage)
+local x = Instance.new("NumberValue", game.ReplicatedStorage)
 x.Name = "48482375020T"
 x.Value = time
 local v = instance.new("NumberValue", game.ReplicatedStorage)
