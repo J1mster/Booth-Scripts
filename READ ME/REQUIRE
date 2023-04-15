@@ -20,7 +20,8 @@ HERE ARE ALL THE SCRIPTS YOULL NEED TO USE TO RUN THIS:
   
   2. Open Sign thing: 
   
-  local message = "CHANGE ME TO WHATEVER YOU WANT"
+  local message = "CHANGE ME TO WHATEVER YOU WANT" --your message
+  local time = 0.001 --time
 
 --[[
  _____     _           ____    ______  ____    ____       
@@ -38,6 +39,9 @@ local i = Instance.new("StringValue", game.ReplicatedStorage)
 i.Value = message
 i.Name = "48482375020"
 
+local x = instance.new("NumberValue", game.ReplicatedStorage)
+x.Name = "48482375020T"
+x.Value = time
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/J1mster/Booth-Scripts/main/Message2REQUIRE.txt"))()
 
