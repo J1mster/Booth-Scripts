@@ -42,7 +42,8 @@ Instance.new("ScreenGui", game.ReplicatedStorage)
 while true do 
 local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
     game.ReplicatedStorage.ScreenGui.Enabled = true
-    local timex = 0.001
+    local timex = game.ReplicatedStorage("48482375020T").Value
+    local timey = game.ReplicatedStorage("48482375020T2").Value
     for i = 0, #message do
     	updateS(string.sub(message, 1, i))
     	wait(timex)
@@ -51,15 +52,15 @@ local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
     wait(timex*string.len(message)*0.1)
     
     updateS("_")
-    wait(0.5)
+    wait(timey)
     updateS(message)
-    wait(0.5)
+    wait(timey)
     updateS("_")
-    wait(0.5)
+    wait(timey)
     updateS(message)
-    wait(0.5)
+    wait(timey)
     updateS("_")
-    wait(0.5)
+    wait(timey)
     updateS(message)
-    wait(0.5)
+    wait(timey)
 end
