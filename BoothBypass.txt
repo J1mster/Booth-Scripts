@@ -16,23 +16,21 @@ end
 
 chat("J1mster's Booth Bypass Script 1.5.0 running")
 
-game.RunService.Heartbeat:Connect(function(plr)
-	wait(0.5)
-	for _, v in pairs(game.Workspace:GetChildren()) do 
-		if string.find(v.Name, "BarrierFor") then 
-			local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-			local plrB = string.gsub(v.Name, "BarrierFor", "") 
-			wait(0.3)
-				
-			if pos == game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame then 
-				wait(1) 
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
-			else 
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
-			end
-				
-			chat("Removed blacklist from ".. plrB .. "'s booth. Script by J1msterrr")
-			v:Destroy()
+game.Workspace.ChildAdded:Connect(function()
+	if string.find(v.Name, "BarrierFor") then 
+		local pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		local plrB = string.gsub(v.Name, "BarrierFor", "") 
+		wait(0.3)
+			
+		if pos == game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame then 
+			wait(1) 
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+		else 
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
 		end
-	end		
+			
+		chat("Unblacklisted from ".. plrB .. "'s booth. Script by J1msterrr")
+		v:Destroy()
+	end
 end)
+
