@@ -21,8 +21,8 @@ local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
 
     game.ReplicatedStorage.ScreenGui.Enabled = true
     local timey = game.ReplicatedStorage:FindFirstChild("48482375020T2").Value
-    
-        local timex = game.ReplicatedStorage:FindFirstChild("48482375020T").Value
+    local timex = game.ReplicatedStorage:FindFirstChild("48482375020T").Value
+   
     for i = 0, #message do
     	updateS(string.sub(message, 1, i))
     	wait(timex)
