@@ -1,4 +1,4 @@
-local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
+
 local function updateS(t)
 	local updater = game:GetService("ReplicatedStorage").CustomiseBooth
     local args = {
@@ -14,7 +14,7 @@ end
 
 Instance.new("ScreenGui", game.ReplicatedStorage)
 while true do 
-	local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
+local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
     game.ReplicatedStorage.ScreenGui.Enabled = true
     local timex = game.ReplicatedStorage("48482375020T").Value
     local timey = game.ReplicatedStorage("48482375020T2").Value
@@ -37,6 +37,6 @@ while true do
     wait(timey)
     updateS(message)
     wait(timey)
-    updateS("SCRIPT MADE BY J1MSTER")
+    updateS("SCRIPT MADE BY J1MSTER ")
     wait(0.3)
 end
