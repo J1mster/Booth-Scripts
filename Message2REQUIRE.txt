@@ -11,7 +11,7 @@ local function updateS(t)
     
     updater:FireServer(unpack(args))
 end
-
+wait(2)
 Instance.new("ScreenGui", game.ReplicatedStorage)
 while true do 
 local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
