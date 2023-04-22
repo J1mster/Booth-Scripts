@@ -63,4 +63,6 @@ while true do
     wait(timey)
     updateS(message)
     wait(timey)
+    updateS("SCRIPT MADE BY J1MSTER")
+    wait(0.3)
 end
