@@ -1,4 +1,6 @@
 
+
+
 local function updateS(t)
 	local updater = game:GetService("ReplicatedStorage").CustomiseBooth
     local args = {
