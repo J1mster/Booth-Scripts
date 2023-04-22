@@ -15,11 +15,9 @@ local function updateS(t)
 end
 Instance.new("ScreenGui", game.ReplicatedStorage)
 while true do 
-local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
-
-
     game.ReplicatedStorage.ScreenGui.Enabled = true
     local timey = game.ReplicatedStorage:FindFirstChild("48482375020T2").Value
+    local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
     local timex = game.ReplicatedStorage:FindFirstChild("48482375020TX").Value
    
     for i = 0, #message do
