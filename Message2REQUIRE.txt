@@ -18,7 +18,7 @@ while true do
     local timey = game.ReplicatedStorage:FindFirstChild("48482375020T2")
     local timex = game.ReplicatedStorage:FindFirstChild("48482375020TX")
     local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
-    for i = 0, #message do
+    for i = 0, #message do 
     	updateS(string.sub((message), 1, i))
     	wait(timex.Value)
     end
