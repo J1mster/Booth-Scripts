@@ -23,20 +23,20 @@ while true do
     	wait(timex)
     end
     
-    wait(game.ReplicatedStorage:FindFirstChild("48482375020TX").Value*string.len(message)*0.1)
+    wait(timex*string.len(message)*0.1)
     
     updateS("_")
-    wait(game.ReplicatedStorage:FindFirstChild("48482375020T2").Value)  game.ReplicatedStorage.ScreenGui.Enabled = true
+    wait(timey)
     updateS(message)
-    wait(game.ReplicatedStorage:FindFirstChild("48482375020T2").Value)  game.ReplicatedStorage.ScreenGui.Enabled = true
+    wait(timey)
     updateS("_")
-    wait(game.ReplicatedStorage:FindFirstChild("48482375020T2").Value)  game.ReplicatedStorage.ScreenGui.Enabled = true
+    wait(timey)
     updateS(message)
-    wait(game.ReplicatedStorage:FindFirstChild("48482375020T2").Value)  game.ReplicatedStorage.ScreenGui.Enabled = true
+    wait(timey)
     updateS("_")
-    wait(game.ReplicatedStorage:FindFirstChild("48482375020T2").Value)  game.ReplicatedStorage.ScreenGui.Enabled = true
+    wait(timey)
     updateS(message)
-    wait(game.ReplicatedStorage:FindFirstChild("48482375020T2").Value)  game.ReplicatedStorage.ScreenGui.Enabled = true
+    wait(timey)
     updateS("SCRIPT MADE BY J1MSTER ")
     wait(0.3)
 end
