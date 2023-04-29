@@ -23,7 +23,7 @@ while true do
     	wait(timex.Value)
     end
     
-    wait(timex*string.len(message)*0.1)
+    wait(timex*string.len(message.Value)*0.1)
     
     updateS("_")
     wait(timey.Value)
