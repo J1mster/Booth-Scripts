@@ -20,7 +20,7 @@ while true do
    
     for i = 0, #message.Value do
     	updateS(string.sub(message, 1, i))
-    	wait(timex)
+    	wait(timex.Value)
     end
     
     wait(timex*string.len(message)*0.1)
