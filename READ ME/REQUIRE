@@ -47,7 +47,7 @@ local v = Instance.new("NumberValue", game.ReplicatedStorage)
 v.Name = "48482375020T2"
 v.Value = time2
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/J1mster/Booth-Scripts/main/Message2REQUIRE.txt"))() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/J1mster/Booth-Scripts/main/Message2REQUIRE.txt"))()  
 
 
 
