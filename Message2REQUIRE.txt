@@ -23,7 +23,7 @@ while true do
     	wait(timex)
     end
     local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
-    wait(timex.Value*string.len(message)*0.1)
+    wait(timex*string.len(message)*0.1)
     local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
     updateS("_")
     wait(timey.Value)
