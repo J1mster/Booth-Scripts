@@ -14,28 +14,28 @@ wait(1)
 Instance.new("ScreenGui", game.ReplicatedStorage)
 while true do 
     game.ReplicatedStorage.ScreenGui.Enabled = true
-    local message = game.ReplicatedStorage:FindFirstChild("48482375020")
+    local message = game.ReplicatedStorage:FindFirstChild("48482375020").Value
     local timey = game.ReplicatedStorage:FindFirstChild("48482375020T2")
     local timex = game.ReplicatedStorage:FindFirstChild("48482375020TX")
    
-    for i = 0, #message.Value do
-    	updateS(string.sub((message.Value), 1, i))
+    for i = 0, #message do
+    	updateS(string.sub((message), 1, i))
     	wait(timex.Value)
     end
     
-    wait(timex*string.len(message.Value)*0.1)
+    wait(timex*string.len(message)*0.1)
     
     updateS("_")
     wait(timey.Value)
-    updateS(message.Value)
+    updateS(message)
     wait(timey.Value)
     updateS("_")
     wait(timey.Value)
-    updateS(message.Value)
+    updateS(message)
     wait(timey.Value)
     updateS("_")
     wait(timey.Value)
-    updateS(message.Value)
+    updateS(message)
     wait(timey.Value)
     updateS("SCRIPT MADE BY J1MSTER ")
     wait(0.3)
