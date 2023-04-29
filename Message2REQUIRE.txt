@@ -40,5 +40,4 @@ while true do
     wait(game.ReplicatedStorage:FindFirstChild("48482375020T2").Value)  game.ReplicatedStorage.ScreenGui.Enabled = true
     updateS("SCRIPT MADE BY J1MSTER ")
     wait(0.3)
-     game.ReplicatedStorage.ScreenGui.Enabled = true
 end
