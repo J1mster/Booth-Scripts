@@ -9,7 +9,7 @@ local function updateS(t)
     }
     
     updater:FireServer(unpack(args))
-end
+end 
 wait(1)
 Instance.new("ScreenGui", game.ReplicatedStorage)
 while true do 
